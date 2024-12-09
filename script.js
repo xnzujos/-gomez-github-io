@@ -4,7 +4,7 @@
 function redirectToProject(event) {
     // Get the data-link attribute from the parent project element
     const projectElement = event.currentTarget.closest('.project');
-    const link = projectElement.getAttribute('facebook.com');
+    const link = projectElement.getAttribute('data-link');
     // Redirect to the specified link
     window.location.href = link;
 }
